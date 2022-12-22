@@ -15,10 +15,32 @@ textarea {
 
 .jumbotron {
   text-align: center;
-  background-color: transparent;
-  color: black;
-  border-radius: 0;
-  border-bottom: 10px solid black;
+  background-color: rgba(255, 76, 100, 0.824);
+  color: rgb(255, 255, 255);
+  text-shadow: 3px 3px 5px rgba(91, 26, 34, 0.509);
+  border-radius: 0px;
+  border-bottom: 2.5px solid rgb(208, 208, 208);
+}
+
+.jumbotron h1 {
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  font-size: 52px;
+  font-weight: bold;
+  padding: 10px;
+  border-bottom: 0.5px solid#ffffff89;
+}
+
+.jumbotron .lead {
+  color: rgb(255, 211, 211);
+  font-weight: bold;
+}
+
+.jumbotron #currentDay {
+  padding-top: 10px;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: bold;
 }
 
 .description {
