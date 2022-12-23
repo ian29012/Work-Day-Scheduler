@@ -4,6 +4,7 @@ const timeID = document.querySelectorAll("#time");
 var saveBtn = $(".saveBtn");
 var rowID = $(".row"); 
 var timeLine = [9, 10, 11, 12, 13, 14, 15, 16, 17];
+var cleanBtn = $(".cleanBtn");
 
 // Current time display 
 function currentTime(){
@@ -41,10 +42,17 @@ function saveEvent(event){
 function init(){
     for ( var i = 0; i < timeLine.length; i++ ){
     $(timeID[i]).text(localStorage.getItem(timeLine[i]));
-    console.log(localStorage.getItem(timeLine[i]))
 }};
 
-saveBtn.on("click", saveEvent)
+function clean(event){
+    event.preventDefault();
+    $(this).siblings("textarea").val("");
+    var valId = this.parentElement.id;
+    localStorage.removeItem(valId);
+    init();
+}
 
+saveBtn.on("click", saveEvent)
+cleanBtn.on("click", clean)
 whatTime();
 init();
