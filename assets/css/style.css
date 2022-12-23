@@ -1,3 +1,7 @@
+:root{
+  box-sizing: none;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
@@ -9,10 +13,11 @@ textarea {
   border: none;
   resize: none;
   color: #000000;
-  border-left: 1px solid black;
+  border-left: 0.5px solid rgba(0, 0, 0, 0.271);
   padding: 10px;
 }
 
+/* Heading (Time & Date)*/ 
 .jumbotron {
   text-align: center;
   background-color: rgba(255, 76, 100, 0.824);
@@ -47,47 +52,75 @@ textarea {
   white-space: pre-wrap;
 }
 
+
+/* Schedule */ 
+.container .row p {
+  font-size: 24px;
+  margin-top: 13px;
+  padding: auto;
+  height: auto;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+} 
+
 .time-block {
   text-align: center;
-  border-radius: 15px;
+  border-radius: 30px;
 }
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;
+.row{
+  margin: 15px;
+  height: 50px;
 }
 
 .hour {
   background-color: #ffffff;
-  color: #000000;
-  border-top: 1px dashed #000000;
+  color: #3e3e3e;
+  border: 0.5px dashed #3e3e3e;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  justify-content: center;
+  text-align: center;
+
+}
+
+input {
+  border: 0px solid;
+  font-family: 'Arial Rounded MT Bold', sans-serif;
+  color: #3e3e3e;
 }
 
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: rgb(58, 58, 58);
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: rgb(58, 58, 58);
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: rgb(58, 58, 58);
 }
 
 .saveBtn {
-  border-left: 1px solid black;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  background-color: rgba(255, 76, 100, 0.824);
   color: white;
+  justify-content: center;
+  text-align: center;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
+.saveBtn p:hover {
+  font-size: 25px;
   transition: all 0.3s ease-in-out;
+}
+
+.saveBtn:hover {
+  background-color: rgba(231, 42, 67, 0.824);
+}
+
+.saveBtn:active {
+  background-color: rgba(137, 42, 55, 0.348);
 }
