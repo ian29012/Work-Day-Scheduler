@@ -31,6 +31,7 @@ function whatTime(){
     };
 };
 // Save the event in local storage when the save button is clicked in that timeblock.
+// Persist events between refreshes of a page
 function saveEvent(event){
     event.preventDefault();
     var valInput = $(this).siblings("textarea").val();
@@ -38,12 +39,12 @@ function saveEvent(event){
     localStorage.setItem(valId, valInput);
     init();
 }
-
+// refresh the localstorage
 function init(){
     for ( var i = 0; i < timeLine.length; i++ ){
     $(timeID[i]).text(localStorage.getItem(timeLine[i]));
 }};
-
+// clean the event in local storage and value when the clean button is clicked in that timeblock.
 function clean(event){
     event.preventDefault();
     $(this).siblings("textarea").val("");
