@@ -5,7 +5,7 @@ Create a simple calendar application that allows a user to save events for each 
 Feel free to visit the Website below :
 https://ian29012.github.io/Work-Day-Scheduler/
 
-![alt text](./assets/images/05-third-party-apis-homework-demo.gif)
+![alt text](./assets/images/05-third-party-apis-homework-demo.png)
 
 The task is to write JavaScript code that analyzes the records to calculate each of the following:
 
